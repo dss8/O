@@ -1,0 +1,21 @@
+create database company;
+
+use company;
+
+create table employee(
+    id int primary key,
+    name varchar(50),
+    salary double
+);
+
+show tables;
+
+desc employee;
+
+insert into employee values(101,'Abhay',50000);
+
+select * from employee;
+
+javac -cp ".;mysql-connector-j-9.7.0.jar" EmployeeManagement.java
+
+java -cp ".;mysql-connector-j-9.7.0.jar" EmployeeManagement
