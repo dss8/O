@@ -1,0 +1,28 @@
+create database college;
+
+use college;
+
+create table student(
+    id int primary key,
+    name varchar(50),
+    marks double
+);
+
+show tables;
+
+desc student;
+
+insert into student values(101,'Abhay',85);
+
+select * from student;
+
+update student set marks=90 where id=101;
+
+select * from student;
+
+delete from student where id=101;
+
+select * from student;
+
+javac -cp ".;mysql-connector-j-9.7.0.jar" StudentManagement.java
+java -cp ".;mysql-connector-j-9.7.0.jar" StudentManagement
